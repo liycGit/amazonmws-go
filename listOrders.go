@@ -156,54 +156,54 @@ type Order struct {
 		Phone         string `xml:"Phone"`
 		AddressType   string `xml:"AddressType"`
 	} `xml:"ShippingAddress"`
-	// PurchaseDate       time.Time `xml:"PurchaseDate"`
-	// LastUpdateDate     string    `xml:"LastUpdateDate"`
-	// OrderStatus        string    `xml:"OrderStatus"`
-	// FulfillmentChannel string    `xml:"FulfillmentChannel"`
-	// SalesChannel       string    `xml:"SalesChannel"`
-	// OrderTotal struct {
-	// 	CurrencyCode string `xml:"CurrencyCode"`
-	// 	Amount       string `xml:"Amount"`
-	// } `xml:"OrderTotal"`
-	// NumberOfItemsShipped   string `xml:"NumberOfItemsShipped"`
-	// NumberOfItemsUnshipped string `xml:"NumberOfItemsUnshipped"`
-	// PaymentMethod          string `xml:"PaymentMethod"`
-	// PaymentMethodDetails   struct {
-	// 	PaymentMethodDetail string `xml:"PaymentMethodDetail"`
-	// } `xml:"PaymentMethodDetails"`
-	// MarketplaceID string `xml:"MarketplaceId"`
-	// BuyerName     string `xml:"BuyerName"`
-	// BuyerTaxInfo  struct {
-	// 	CompanyLegalName   string `xml:"CompanyLegalName"`
-	// 	TaxingRegion       string `xml:"TaxingRegion"`
-	// 	TaxClassifications struct {
-	// 		TaxClassification struct {
-	// 			Text  string `xml:",chardata"`
-	// 			Name  string `xml:"Name"`
-	// 			Value string `xml:"Value"`
-	// 		} `xml:"TaxClassification"`
-	// 	} `xml:"TaxClassifications"`
-	// } `xml:"BuyerTaxInfo"`
-	// OrderType              string `xml:"OrderType"`
-	// EarliestShipDate       string `xml:"EarliestShipDate"`
-	// LatestShipDate         string `xml:"LatestShipDate"`
-	// IsBusinessOrder        string `xml:"IsBusinessOrder"`
-	// PurchaseOrderNumber    string `xml:"PurchaseOrderNumber"`
-	// IsPrime                string `xml:"IsPrime"`
-	// IsPremiumOrder         string `xml:"IsPremiumOrder"`
-	// BuyerCounty            string `xml:"BuyerCounty"`
-	// ShipServiceLevel       string `xml:"ShipServiceLevel"`
-	// PaymentExecutionDetail struct {
-	// 	PaymentExecutionDetailItem []struct {
-	// 		Payment struct {
-	// 			Text         string `xml:",chardata"`
-	// 			Amount       string `xml:"Amount"`
-	// 			CurrencyCode string `xml:"CurrencyCode"`
-	// 		} `xml:"Payment"`
-	// 		PaymentMethod string `xml:"PaymentMethod"`
-	// 	} `xml:"PaymentExecutionDetailItem"`
-	// } `xml:"PaymentExecutionDetail"`
-	// ShipmentServiceLevelCategory string `xml:"ShipmentServiceLevelCategory"`
-	// PromiseResponseDueDate       string `xml:"PromiseResponseDueDate"`
-	// IsEstimatedShipDateSet       string `xml:"IsEstimatedShipDateSet"`
+	PurchaseDate       time.Time `xml:"PurchaseDate"`
+	LastUpdateDate     string    `xml:"LastUpdateDate"`
+	OrderStatus        string    `xml:"OrderStatus"`
+	FulfillmentChannel string    `xml:"FulfillmentChannel"`
+	SalesChannel       string    `xml:"SalesChannel"`
+	OrderTotal         struct {
+		CurrencyCode string `xml:"CurrencyCode"`
+		Amount       string `xml:"Amount"`
+	} `xml:"OrderTotal"`
+	NumberOfItemsShipped   string `xml:"NumberOfItemsShipped"`
+	NumberOfItemsUnshipped string `xml:"NumberOfItemsUnshipped"`
+	PaymentMethod          string `xml:"PaymentMethod"`
+	PaymentMethodDetails   struct {
+		PaymentMethodDetail string `xml:"PaymentMethodDetail"`
+	} `xml:"PaymentMethodDetails"`
+	MarketplaceID string `xml:"MarketplaceId"`
+	BuyerName     string `xml:"BuyerName"`
+	BuyerTaxInfo  struct {
+		CompanyLegalName   string `xml:"CompanyLegalName"`
+		TaxingRegion       string `xml:"TaxingRegion"`
+		TaxClassifications struct {
+			TaxClassification struct {
+				Text  string `xml:",chardata"`
+				Name  string `xml:"Name"`
+				Value string `xml:"Value"`
+			} `xml:"TaxClassification"`
+		} `xml:"TaxClassifications"`
+	} `xml:"BuyerTaxInfo"`
+	OrderType              string `xml:"OrderType"`
+	EarliestShipDate       string `xml:"EarliestShipDate"`
+	LatestShipDate         string `xml:"LatestShipDate"`
+	IsBusinessOrder        string `xml:"IsBusinessOrder"`
+	PurchaseOrderNumber    string `xml:"PurchaseOrderNumber"`
+	IsPrime                string `xml:"IsPrime"`
+	IsPremiumOrder         string `xml:"IsPremiumOrder"`
+	BuyerCounty            string `xml:"BuyerCounty"`
+	ShipServiceLevel       string `xml:"ShipServiceLevel"`
+	PaymentExecutionDetail struct {
+		PaymentExecutionDetailItem []struct {
+			Payment struct {
+				Text         string `xml:",chardata"`
+				Amount       string `xml:"Amount"`
+				CurrencyCode string `xml:"CurrencyCode"`
+			} `xml:"Payment"`
+			PaymentMethod string `xml:"PaymentMethod"`
+		} `xml:"PaymentExecutionDetailItem"`
+	} `xml:"PaymentExecutionDetail"`
+	ShipmentServiceLevelCategory string `xml:"ShipmentServiceLevelCategory"`
+	PromiseResponseDueDate       string `xml:"PromiseResponseDueDate"`
+	IsEstimatedShipDateSet       string `xml:"IsEstimatedShipDateSet"`
 }

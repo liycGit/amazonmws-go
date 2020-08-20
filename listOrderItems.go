@@ -113,60 +113,60 @@ type ListOrderItemsByNextTokenResponse struct {
 
 // OrderItem contains order data - uncomment as needed
 type OrderItem struct {
-	SellerSKU       string `xml:"SellerSKU"`
-	QuantityOrdered int    `xml:"QuantityOrdered"`
-	OrderItemID     string `xml:"OrderItemId"`
-	// ASIN                string `xml:"ASIN"`
-	// BuyerCustomizedInfo struct {
-	// 	CustomizedURL string `xml:"CustomizedURL"`
-	// } `xml:"BuyerCustomizedInfo"`
-	// Title           string `xml:"Title"`
-	// QuantityShipped string `xml:"QuantityShipped"`
-	// ProductInfo     struct {
-	// 	NumberOfItems string `xml:"NumberOfItems"`
-	// } `xml:"ProductInfo"`
-	// PointsGranted struct {
-	// 	PointsNumber        string `xml:"PointsNumber"`
-	// 	PointsMonetaryValue struct {
-	// 		CurrencyCode string `xml:"CurrencyCode"`
-	// 		Amount       string `xml:"Amount"`
-	// 	} `xml:"PointsMonetaryValue"`
-	// } `xml:"PointsGranted"`
-	// ItemPrice struct {
-	// 	CurrencyCode string `xml:"CurrencyCode"`
-	// 	Amount       string `xml:"Amount"`
-	// } `xml:"ItemPrice"`
-	// ShippingPrice struct {
-	// 	CurrencyCode string `xml:"CurrencyCode"`
-	// 	Amount       string `xml:"Amount"`
-	// } `xml:"ShippingPrice"`
-	// ScheduledDeliveryEndDate   string `xml:"ScheduledDeliveryEndDate"`
-	// ScheduledDeliveryStartDate string `xml:"ScheduledDeliveryStartDate"`
-	// CODFee                     struct {
-	// 	CurrencyCode string `xml:"CurrencyCode"`
-	// 	Amount       string `xml:"Amount"`
-	// } `xml:"CODFee"`
-	// CODFeeDiscount struct {
-	// 	CurrencyCode string `xml:"CurrencyCode"`
-	// 	Amount       string `xml:"Amount"`
-	// } `xml:"CODFeeDiscount"`
-	// IsGift          string `xml:"IsGift"`
-	// IsTransparency  string `xml:"IsTransparency"`
-	// GiftMessageText string `xml:"GiftMessageText"`
-	// GiftWrapPrice   struct {
-	// 	CurrencyCode string `xml:"CurrencyCode"`
-	// 	Amount       string `xml:"Amount"`
-	// } `xml:"GiftWrapPrice"`
-	// GiftWrapLevel    string `xml:"GiftWrapLevel"`
-	// PriceDesignation string `xml:"PriceDesignation"`
-	// PromotionIds     struct {
-	// 	PromotionId string `xml:"PromotionId"`
-	// } `xml:"PromotionIds"`
-	// ConditionId        string `xml:"ConditionId"`
-	// ConditionSubtypeId string `xml:"ConditionSubtypeId"`
-	// ConditionNote      string `xml:"ConditionNote"`
-	// TaxCollection      struct {
-	// 	Model            string `xml:"Model"`
-	// 	ResponsibleParty string `xml:"ResponsibleParty"`
-	// } `xml:"TaxCollection"`
+	SellerSKU           string `xml:"SellerSKU"`
+	QuantityOrdered     int    `xml:"QuantityOrdered"`
+	OrderItemID         string `xml:"OrderItemId"`
+	ASIN                string `xml:"ASIN"`
+	BuyerCustomizedInfo struct {
+		CustomizedURL string `xml:"CustomizedURL"`
+	} `xml:"BuyerCustomizedInfo"`
+	Title           string `xml:"Title"`
+	QuantityShipped string `xml:"QuantityShipped"`
+	ProductInfo     struct {
+		NumberOfItems string `xml:"NumberOfItems"`
+	} `xml:"ProductInfo"`
+	PointsGranted struct {
+		PointsNumber        string `xml:"PointsNumber"`
+		PointsMonetaryValue struct {
+			CurrencyCode string `xml:"CurrencyCode"`
+			Amount       string `xml:"Amount"`
+		} `xml:"PointsMonetaryValue"`
+	} `xml:"PointsGranted"`
+	ItemPrice struct {
+		CurrencyCode string `xml:"CurrencyCode"`
+		Amount       string `xml:"Amount"`
+	} `xml:"ItemPrice"`
+	ShippingPrice struct {
+		CurrencyCode string `xml:"CurrencyCode"`
+		Amount       string `xml:"Amount"`
+	} `xml:"ShippingPrice"`
+	ScheduledDeliveryEndDate   string `xml:"ScheduledDeliveryEndDate"`
+	ScheduledDeliveryStartDate string `xml:"ScheduledDeliveryStartDate"`
+	CODFee                     struct {
+		CurrencyCode string `xml:"CurrencyCode"`
+		Amount       string `xml:"Amount"`
+	} `xml:"CODFee"`
+	CODFeeDiscount struct {
+		CurrencyCode string `xml:"CurrencyCode"`
+		Amount       string `xml:"Amount"`
+	} `xml:"CODFeeDiscount"`
+	IsGift          string `xml:"IsGift"`
+	IsTransparency  string `xml:"IsTransparency"`
+	GiftMessageText string `xml:"GiftMessageText"`
+	GiftWrapPrice   struct {
+		CurrencyCode string `xml:"CurrencyCode"`
+		Amount       string `xml:"Amount"`
+	} `xml:"GiftWrapPrice"`
+	GiftWrapLevel    string `xml:"GiftWrapLevel"`
+	PriceDesignation string `xml:"PriceDesignation"`
+	PromotionIds     struct {
+		PromotionId string `xml:"PromotionId"`
+	} `xml:"PromotionIds"`
+	ConditionId        string `xml:"ConditionId"`
+	ConditionSubtypeId string `xml:"ConditionSubtypeId"`
+	ConditionNote      string `xml:"ConditionNote"`
+	TaxCollection      struct {
+		Model            string `xml:"Model"`
+		ResponsibleParty string `xml:"ResponsibleParty"`
+	} `xml:"TaxCollection"`
 }
